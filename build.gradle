@@ -14,7 +14,7 @@ base {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(21)
     }
     withSourcesJar()
 }
@@ -91,8 +91,14 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-slf4j18-impl:2.17.2"
     implementation "me.carleslc:Simple-Yaml:1.8.4"
 
-    modImplementation("net.modificationstation:StationAPI:${project.stapi_version}") {
-        exclude group: "babric", module: "fabric-loader"
+   // transitiveImplementation(implementation("org.apache.commons:commons-lang3:3.12.0") as Dependency)
+    //transitiveImplementation(implementation("commons-io:commons-io:2.11.0") as Dependency)
+
+    if (project.hasProperty("stapi_version")) {
+        // modImplementation
+        implementation ("net.modificationstation:StationAPI:${project.stapi_version}") {
+            exclude group: "babric", module: "fabric-loader"
+        }
     }
 
     if (project.hasProperty("modmenu_version")) {

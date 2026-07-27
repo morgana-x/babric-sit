@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "template",
+  "id": "sit",
   "version": "${version}",
 
-  "name": "Template",
+  "name": "Sit",
   "description": "",
   "authors": [
-    "DanyGames2014"
+    "morgana"
   ],
 
   "license": "MIT",
@@ -22,7 +22,7 @@
     ]
   },
   "mixins": [
-    "template.mixins.json"
+    "sit.mixins.json"
   ],
 
   "depends": {

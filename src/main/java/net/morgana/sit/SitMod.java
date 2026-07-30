@@ -29,11 +29,11 @@ public class SitMod {
         if (p == null)
             return;
 
-        if (p.vehicle != null)
-            return;
-
         if (getSeat(p) != null)
             unMountSeat(p);
+
+        if (p.vehicle != null)
+            return;
 
 
         if (!p.isAlive() || p.isInsideWall() || p.isSleeping() || !p.onGround)

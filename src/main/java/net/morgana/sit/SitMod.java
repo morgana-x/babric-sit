@@ -43,8 +43,9 @@ public class SitMod {
 
         SlimeEntity e = new SlimeEntity(p.world);
 
-        e.setPosition(p.x, p.y - 0.75, p.z);
         e.setSize(0);
+        e.height = 0.025f;
+        e.setPosition(p.x, p.y + 0.025, p.z);
 
         e.passenger = p;
 

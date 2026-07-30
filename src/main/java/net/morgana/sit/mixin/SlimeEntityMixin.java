@@ -21,8 +21,9 @@ public abstract class SlimeEntityMixin extends LivingEntity {
     {
         if (this.getSize() <= 0)
         {
-            this.height = 1;
-            this.width = 1;
+            this.height = 0.025f;
+            this.width = 0.15f;
+            this.tickMovement();
             ci.cancel();
         }
     }

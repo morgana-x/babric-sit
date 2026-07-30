@@ -39,8 +39,6 @@ public class SitMod {
         if (!p.isAlive() || p.isInsideWall() || p.isSleeping() || !p.onGround)
             return;
 
-        System.out.println("Mounting seat for " + p.name);
-
         SlimeEntity e = new SlimeEntity(p.world);
 
         e.setSize(0);
@@ -61,7 +59,6 @@ public class SitMod {
         if (p == null)
             return;
 
-        System.out.println("Dismounting seat for " + p.name);
         Entity seat = getSeat(p);
 
 

@@ -2,7 +2,6 @@ package net.morgana.sit.fabric;
 
 import com.matthewperiut.retrocommands.util.RetroChatUtil;
 import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.morgana.sit.SitMod;

@@ -48,15 +48,6 @@ public class SitMod {
 
         e.passenger = p;
 
-        /*int attempts = 0;
-        while (e.passenger.isInsideWall() && attempts < 15)
-        {
-            e.setPosition(e.x, e.y+0.1, e.z);
-            e.updatePassengerPosition();
-            attempts++;
-        }*/
-
-
         p.world.spawnEntity(e);
 
         p.setVehicle(e);
@@ -76,7 +67,6 @@ public class SitMod {
         if (p.vehicle != null && p.vehicle == seat) {
             Entity v = p.vehicle;
             p.setVehicle(null);
-        //    p.setPosition(v.x, v.y + v.getPassengerRidingHeight() + 0.1, v.z);
         }
 
         if (seat != null && seat.world.entities.contains(seat))

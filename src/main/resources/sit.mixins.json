@@ -10,7 +10,8 @@
     "server.MinecraftServerMixin",
     "server.PlayerManagerMixin",
     "server.ServerPlayNetworkHandlerMixin",
-    "server.WorldMixin"
+    "server.WorldMixin",
+    "server.LivingEntityMixin"
   ],
   "client": [
     "client.KeyboardInputMixin",

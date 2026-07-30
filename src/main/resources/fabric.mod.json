@@ -10,15 +10,12 @@
   ],
 
   "license": "MIT",
-  "icon": "assets/template/icon.png",
+  "icon": "assets/sit/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "stationapi:event_bus": [
-    ],
-    "stationapi:event_bus_client": [
-    ],
-    "stationapi:event_bus_server": [
+    "main": [
+      "net.morgana.sit.fabric.SitFabricMod"
     ]
   },
   "mixins": [
@@ -27,5 +24,9 @@
 
   "depends": {
     "minecraft": "1.0.0-beta.7.3"
+  },
+
+  "suggests": {
+    "retrocommands": "*"
   }
 }

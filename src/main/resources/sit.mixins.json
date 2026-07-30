@@ -4,10 +4,19 @@
   "package": "net.morgana.sit.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "SlimeEntityMixin"
   ],
   "server": [
+    "server.MinecraftServerMixin",
+    "server.PlayerEntityMixin",
+    "server.PlayerManagerMixin",
+    "server.ServerPlayNetworkHandlerMixin",
+    "server.WorldMixin"
   ],
   "client": [
+    "client.KeyboardInputMixin",
+    "client.MinecraftMixin",
+    "client.WorldMixin"
   ],
   "injectors": {
     "defaultRequire": 1

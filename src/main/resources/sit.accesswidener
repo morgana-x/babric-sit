@@ -1,0 +1,3 @@
+accessWidener v1 named
+accessible method net/minecraft/entity/Entity getFlag (I)Z
+accessible method net/minecraft/entity/Entity setFlag (IZ)V

@@ -4,8 +4,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.KeyBinding;
 import net.morgana.sit.SitMod;
+import net.morgana.sit.keybind.Keybinds;
+import org.lwjgl.input.Keyboard;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -36,7 +39,7 @@ public class GameOptionsMixin {
     {
         List<KeyBinding> keys = new ArrayList<>(Arrays.stream(this.allKeys).toList());
 
-        keys.add(SitMod.SitKeybind);
+        keys.add(Keybinds.SitKeybind);
 
         this.allKeys = keys.toArray(new KeyBinding[0]);
     }

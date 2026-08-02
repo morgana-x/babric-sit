@@ -27,8 +27,6 @@ public class SitMod {
         return getSeat(p) != null;
     }
 
-    public static KeyBinding SitKeybind = new KeyBinding("sit.options.key.sit", Keyboard.KEY_B);
-
     public static void mountSeat(PlayerEntity p)
     {
         if (p == null)

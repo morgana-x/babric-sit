@@ -3,6 +3,7 @@ package net.morgana.sit.mixin.client;
 import com.matthewperiut.retrocommands.mixin.client.MinecraftMixinChatEnabler;
 import net.minecraft.entity.player.ClientPlayerEntity;
 import net.morgana.sit.SitMod;
+import net.morgana.sit.keybind.Keybinds;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,7 +17,7 @@ public abstract class ClientPlayerEntityMixin {
     @Inject(method = "updateKey", at = @At("TAIL"))
     void updateKey(int key, boolean state, CallbackInfo callbackInfo)
     {
-        if (SitMod.SitKeybind.code == key && state)
+        if (Keybinds.SitKeybind.code == key && state)
             sendChatMessage("/sit");
     }
 

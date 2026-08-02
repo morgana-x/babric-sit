@@ -1,8 +1,11 @@
 package net.morgana.sit;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.option.KeyBinding;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.mob.SlimeEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import org.lwjgl.input.Keyboard;
 
 import java.util.*;
 
@@ -23,6 +26,8 @@ public class SitMod {
     {
         return getSeat(p) != null;
     }
+
+    public static KeyBinding SitKeybind = new KeyBinding("sit.options.key.sit", Keyboard.KEY_B);
 
     public static void mountSeat(PlayerEntity p)
     {

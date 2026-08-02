@@ -16,7 +16,10 @@
   "client": [
     "client.KeyboardInputMixin",
     "client.MinecraftMixin",
-    "client.WorldMixin"
+    "client.WorldMixin",
+    "client.TranslationStorageMixin",
+    "client.ClientPlayerEntityMixin",
+    "client.GameOptionsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
